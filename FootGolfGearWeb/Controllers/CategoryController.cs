@@ -9,7 +9,7 @@ namespace FootGolfGearWeb.Controllers
         private readonly ApplicationDbContext _db;
         public CategoryController(ApplicationDbContext db)
         {
-            _db = db;        
+            _db = db;
         }
 
         public IActionResult Index()
@@ -26,14 +26,11 @@ namespace FootGolfGearWeb.Controllers
         [HttpPost]
         public IActionResult Create(Category obj)
         {
-            //if(obj.Name ==  obj.DisplayOrder.ToString())
-            //{
-            //    ModelState.AddModelError("name", "The Display Order cannot excatly match the Name.");
-            //}
             if (ModelState.IsValid)
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Category created successully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -45,7 +42,7 @@ namespace FootGolfGearWeb.Controllers
             {
                 return NotFound();
             }
-            Category category = _db.Categories.Find(id);
+            Category? category = _db.Categories.Find(id);
             if (category == null)
             {
                 return NotFound();
@@ -60,6 +57,7 @@ namespace FootGolfGearWeb.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Category updated successully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -71,7 +69,7 @@ namespace FootGolfGearWeb.Controllers
             {
                 return NotFound();
             }
-            Category category = _db.Categories.Find(id);
+            Category? category = _db.Categories.Find(id);
             if (category == null)
             {
                 return NotFound();
@@ -82,13 +80,14 @@ namespace FootGolfGearWeb.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePost(int? id)
         {
-            Category category = _db.Categories.Find(id);
+            Category? category = _db.Categories.Find(id);
             if (category == null)
             {
                 return NotFound();
             }
             _db.Categories.Remove(category);
             _db.SaveChanges();
+            TempData["success"] = "Category removed successully";
             return RedirectToAction("Index");
         }
     }
