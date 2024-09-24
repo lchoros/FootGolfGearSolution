@@ -5,6 +5,12 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootgolfGear.Web", "FootGolfGearWeb\FootgolfGear.Web.csproj", "{18764450-A69F-4B43-B2FB-1ED31EFF0AED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootgolfGear.Models", "FootgolfGear.Models\FootgolfGear.Models.csproj", "{67FA0100-6B86-4852-9577-BA1D248AA1EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootgolfGear.DataAccess", "FootgolfGear.DataAccess\FootgolfGear.DataAccess.csproj", "{6EDCFB7B-CA91-42A9-A7FB-C2A19E3A09E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootgolfGear.Utility", "FootgolfGear.Utility\FootgolfGear.Utility.csproj", "{6A16C89C-DE19-4498-B9F0-D4835E00462D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{18764450-A69F-4B43-B2FB-1ED31EFF0AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18764450-A69F-4B43-B2FB-1ED31EFF0AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18764450-A69F-4B43-B2FB-1ED31EFF0AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67FA0100-6B86-4852-9577-BA1D248AA1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67FA0100-6B86-4852-9577-BA1D248AA1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67FA0100-6B86-4852-9577-BA1D248AA1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67FA0100-6B86-4852-9577-BA1D248AA1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDCFB7B-CA91-42A9-A7FB-C2A19E3A09E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDCFB7B-CA91-42A9-A7FB-C2A19E3A09E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDCFB7B-CA91-42A9-A7FB-C2A19E3A09E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDCFB7B-CA91-42A9-A7FB-C2A19E3A09E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A16C89C-DE19-4498-B9F0-D4835E00462D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A16C89C-DE19-4498-B9F0-D4835E00462D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A16C89C-DE19-4498-B9F0-D4835E00462D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A16C89C-DE19-4498-B9F0-D4835E00462D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
